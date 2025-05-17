@@ -271,6 +271,7 @@ body {
   line-height: 1.8;
   color: #444;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .overview-images {
@@ -458,7 +459,13 @@ body {
     width: 90%;
     padding: 1rem;
   }
-  
+  .overview-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 2rem;
+    text-align: Center;
+  }
   .content h1 {
     font-size: 1.5rem;
   }
