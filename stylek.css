@@ -1724,6 +1724,10 @@ footer {
   background-image: url('icons8-location-50.png');
 }
 
+.contact-info .Co-name::before {
+  background-image: url('icons8-industry-30.png');
+}
+
  .contact-info .Tele::before {
   background-image: url('icons8-telephone-64.png');
 } 
