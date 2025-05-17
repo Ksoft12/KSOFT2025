@@ -1736,6 +1736,10 @@ footer {
   background-image: url('icons8-phone-30.png');
 }
 
+.contact-info .linkedin::before {
+  background-image: url('icons8-linkedin-30.png');
+}
+
 .contact-info .email::before {
   background-image: url('icons8-mail-50.png');
 }
