@@ -409,8 +409,7 @@ body {
 
 /* Add this to your CSS */
 footer {
-  background:
-              url('Dark sky.jpg') center/cover;
+  background: url('Dark sky.jpg') center/cover;
   color: #fff;
   padding: 50px 20px 20px;
   position: relative;
