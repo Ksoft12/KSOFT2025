@@ -511,9 +511,45 @@ footer {
   .map-container1 {
     height: 250px;
   }
+  
 
-}
 
+
+
+
+
+
+
+
+
+  .footer-section.logo-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0 !important;
+  }
+
+  .footer-logo {
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .mission-vision {
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+  /* Center Explore Us section */
+  .footer-section:nth-child(2) {
+    text-align: center;
+  }
+
+  /* Center Contact and Location titles */
+  .footer-section.contact-section h3,
+  .footer-section:last-child h3 {
+    text-align: center;
+    padding-left: 0;
+  }
 
 
 @media (max-width: 480px) {
