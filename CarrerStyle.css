@@ -293,7 +293,7 @@ body {
   color: #7f8c8d;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .text {
@@ -355,7 +355,10 @@ body {
   .custom-iframe5 {
     height: 800px;
   }
+
+  
 }
+
 
 @media (max-width: 480px) {
   .contact-container5 h1 {
@@ -369,6 +372,13 @@ body {
   .custom-iframe5 {
     height: 500px;
   }
+
+  .company-info5 p {
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 }
 
 /* Modern Card Effects */
