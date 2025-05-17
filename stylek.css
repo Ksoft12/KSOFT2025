@@ -1786,9 +1786,7 @@ footer {
 
 
 
-.contact-info{
-  margin-left:8%;
-}
+
 
 
   .footer-section.logo-section {
@@ -1807,7 +1805,11 @@ footer {
   .mission-vision {
     text-align: center;
   }
+ 
 
+.contact-info{
+  margin-left:8%;
+}
 
   /* Center Explore Us section */
   .footer-section:nth-child(2) {
