@@ -486,7 +486,7 @@ body {
 /* Add this to your CSS */
 footer {
   background:
-              url('Images/Dark sky.jpg') center/cover;
+              url('Dark sky.jpg') center/cover;
   color: #fff;
   padding: 50px 20px 20px;
   position: relative;
@@ -578,19 +578,19 @@ footer {
 }
 
 .contact-info .address::before {
-  background-image: url('Images/icons8-location-50.png');
+  background-image: url('icons8-location-50.png');
 }
 
 .contact-info .Tele::before {
-  background-image: url('Images/icons8-telephone-64.png');
+  background-image: url('icons8-telephone-64.png');
 } 
 
 .contact-info .phone::before {
-  background-image: url('Images/icons8-phone-30.png');
+  background-image: url('icons8-phone-30.png');
 }
 
 .contact-info .email::before {
-  background-image: url('Images/icons8-mail-50.png');
+  background-image: url('icons8-mail-50.png');
 }
 
 .footer-bottom {
