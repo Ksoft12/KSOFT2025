@@ -369,6 +369,11 @@ body {
   .custom-iframe5 {
     height: 500px;
   }
+  .company-info5 p {
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 /* Modern Card Effects */
