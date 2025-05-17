@@ -1805,6 +1805,29 @@ footer {
   .mission-vision {
     text-align: center;
   }
+  .footer-section.contact-section {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .contact-info {
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .contact-info li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .contact-info li::before {
+    display: none; /* Hide icons on mobile */
+  }
+
+  .contact-info .linkedin {
+    justify-content: center;
+  }
   @media (max-width: 768px) {
   /* Center Explore Us section */
   .footer-section:nth-child(2) {
