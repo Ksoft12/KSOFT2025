@@ -616,6 +616,15 @@ footer {
 .contact-info .email::before {
   background-image: url('icons8-mail-50.png');
 }
+.contact-info .Co-name::before {
+  background-image: url('icons8-factory-30.png');
+}
+
+.contact-info .linkedin::before {
+  background-image: url('icons8-linkedin-30.png');
+}
+
+
 
 .footer-bottom {
   text-align: center;
