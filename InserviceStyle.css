@@ -663,6 +663,10 @@ footer {
   .mission-vision {
     text-align: center;
   }
+    .content h1 {
+    font-size: 1.5rem;
+  }
+  
   @media (max-width: 768px) {
   /* Center Explore Us section */
   .footer-section:nth-child(2) {
