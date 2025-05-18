@@ -517,6 +517,9 @@ footer {
   .mission-vision {
     text-align: center;
   }
+  .contact-info{
+  margin-left:8%;
+}
   @media (max-width: 768px) {
   /* Center Explore Us section */
   .footer-section:nth-child(2) {
