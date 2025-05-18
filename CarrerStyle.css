@@ -258,6 +258,19 @@ body {
   position: relative;
 }
 
+.contact-container5,
+.contact-content5,
+.contact-form5 {
+  height: auto !important;
+  min-height: 1200px; /* Adjust as needed */
+}
+
+/* Full-height iframe */
+.custom-iframe5 {
+  height: 170vh !important; 
+  min-height: 1200px;
+  width: 100%;
+}
 .contact-container5 h1::after {
   content: '';
   position: absolute;
