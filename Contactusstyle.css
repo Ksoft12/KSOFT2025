@@ -547,12 +547,10 @@ footer {
   .mission-vision {
     text-align: center;
   }
- 
-
-.contact-info{
+  .contact-info{
   margin-left:8%;
-}
-
+  }
+  
   /* Center Explore Us section */
   .footer-section:nth-child(2) {
     text-align: center;
@@ -565,6 +563,24 @@ footer {
     padding-left: 0;
   }
 
+  /* Keep contact info left-aligned but centered in container */
+  .footer-section.contact-section .contact-info {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* Center all h3 headings in footer */
+  .footer-section h3 {
+    text-align: center !important;
+  }
+
+  /* Adjust list alignment for Explore Us */
+  .footer-section ul:not(.contact-info) {
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+  }
+}
 
 
 @media (max-width: 480px) {
