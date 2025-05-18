@@ -334,6 +334,29 @@ body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px;
+  }
+
+}
 
 
 /* Add this to your CSS */
