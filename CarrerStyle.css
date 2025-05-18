@@ -368,7 +368,9 @@ body {
   .custom-iframe5 {
     height: 800px;
   }
-
+  .company-info5 h2 {
+   align-text: center;
+}
   
 }
 
