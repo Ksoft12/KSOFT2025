@@ -2366,31 +2366,14 @@ h1 {
   }
 }
 
-/* Mobile Map Fix */
 @media (max-width: 360px){
-  .footer-section:last-child {
-    padding: 0 10px !important;
-  }
   
   .footer-section{
-    max-width: 330px;
+    max-width: 280px;
+    margin-left:10%;
   }
-  .map-container1 {
-    height: 180px !important;
-    width: 250px;
-    margin: 0 -10px ;
-    margin-left: 5%;
+  .footer-section.contact-section{
+    margin-left:-10%
   }
-
-  .location-iframe {
-    height: 180px !important;
-    width: 100% !important;
-    margin-left: 0 !important;
-    border: none !important;
-  }
-
-  .contact-info li {
-    font-size: 13px !important;
-    padding-left: 20px !important;
-  }
+ 
 }
