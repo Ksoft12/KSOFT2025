@@ -2383,7 +2383,8 @@ h1 {
   }
 
   .location-iframe5 {
-      height: 250px; /* Reduce map height on smaller screens */
+      height: 250px;
+      width: 600px/* Reduce map height on smaller screens */
   }
 }
 
