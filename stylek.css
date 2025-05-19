@@ -2231,62 +2231,10 @@ h1 {
 
   .location-iframe5 {
       height: 200px; /* Further reduce map height for mobile screens */
+      width:600px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact-container5 {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
