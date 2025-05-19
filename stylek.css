@@ -2373,9 +2373,14 @@ h1 {
   }
   
   .footer-section{
-    max-width: 360px;
+    max-width: 330px;
   }
- 
+  .map-container1 {
+    height: 180px !important;
+    width: 250px;
+    margin: 0 -10px ;
+    margin-left: 5%;
+  }
 
   .location-iframe {
     height: 180px !important;
