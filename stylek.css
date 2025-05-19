@@ -2371,13 +2371,11 @@ h1 {
   .footer-section:last-child {
     padding: 0 10px !important;
   }
-
-  .map-container1 {
-    height: 180px !important;
-    width: 250px;
-    margin: 0 -10px ;
-    margin-left: 5%;
+  
+  .footer-section{
+    max-width: 320px;
   }
+ 
 
   .location-iframe {
     height: 180px !important;
