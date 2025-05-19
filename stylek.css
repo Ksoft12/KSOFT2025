@@ -2365,7 +2365,7 @@ h1 {
   
   }
 }
-/* Mobile Map Fix */
+* Mobile Map Fix */
 @media (max-width: 360px){
   
   .footer-section{
@@ -2379,6 +2379,11 @@ h1 {
   .contact-section .contact-info{
     margin-right:-10%;
     margin-left: 27%;
+  }
+
+  .footer-section.contact-section h3{
+    text-align: center;
+    margin-left: 43%;
   }
   
   }
