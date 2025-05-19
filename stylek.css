@@ -2365,3 +2365,29 @@ h1 {
   
   }
 }
+
+/* Mobile Map Fix */
+@media (max-width: 360px){
+  .footer-section:last-child {
+    padding: 0 10px !important;
+  }
+
+  .map-container1 {
+    height: 180px !important;
+    width: 250px;
+    margin: 0 -10px ;
+    margin-left: 5%;
+  }
+
+  .location-iframe {
+    height: 180px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    border: none !important;
+  }
+
+  .contact-info li {
+    font-size: 13px !important;
+    padding-left: 20px !important;
+  }
+}
