@@ -2349,3 +2349,19 @@ h1 {
       height: 200px; /* Further reduce map height for mobile screens */
   }
 }
+
+@media (max-width: 460px) {
+  .contact-container5 {
+      padding: 10px;
+  }
+
+  .custom-iframe5 {
+      height: 800px; /* Further reduce height for mobile screens */
+  }
+
+  .location-iframe5 {
+      height: 200px; /* Further reduce map height for mobile screens */
+      width: 400px;
+  
+  }
+}
