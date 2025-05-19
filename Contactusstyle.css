@@ -244,8 +244,23 @@ body {
   color:white
 }
 
+/* Add this to create a flex container */
+.contact-content1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Ensure children take equal space */
+.contact-form1,
+.company-info1 {
+  flex: 1;
+  min-width: 300px;
+}
+
 /* Enhanced Contact Section Styles */
-.contact-container {
+.contact-container1 {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -254,11 +269,11 @@ body {
   transition: transform 0.3s ease;
 }
 
-.contact-container:hover {
+.contact-container1:hover {
   transform: translateY(-5px);
 }
 
-.contact-content {
+.contact-content1 {
   gap: 40px;
   padding: 2rem;
 }
@@ -276,7 +291,7 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-.company-info h2 {
+.company-info1 h2 {
   color: #2c3e50;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -284,7 +299,7 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.company-info h2::after {
+.company-info1 h2::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -295,77 +310,142 @@ body {
   background: linear-gradient(90deg, #0cea26 0%, #144dd1 100%);
 }
 
-.company-info p {
+.company-info1 p {
   font-size: 1rem;
   color: #4a5568;
   line-height: 1.7;
   margin: 1.2rem 0;
 }
 
-.company-info strong {
+.company-info1 strong {
   color: #2c3e50;
   font-weight: 600;
 }
 
-.custom-iframe {
+.custom-iframe1 {
   border: 2px solid #e2e8f0;
   border-radius: 12px;
   transition: all 0.3s ease;
   background: white;
 }
 
-.custom-iframe:hover {
+.custom-iframe1:hover {
   border-color: #0cea26;
   box-shadow: 0 8px 20px rgba(12, 234, 38, 0.1);
 }
 
-.location-iframe {
+.location-iframe1 {
   border-radius: 12px;
   border: 2px solid #e2e8f0;
   transition: all 0.3s ease;
 }
 
-.location-iframe:hover {
+.location-iframe1:hover {
   border-color: #144dd1;
   box-shadow: 0 8px 20px rgba(20, 77, 209, 0.1);
 }
 
+.custom-iframe1 {
+  width: 100%;
+  height: 650px; /* Adjust as needed */
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.company-info1 {
+  text-align: left; /* or center based on preference */
+  padding: 20px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .contact-container {
+  .contact-container1 {
     margin: 2rem auto;
     border-radius: 15px;
   }
   
-  .contact-content {
+  .contact-content1 {
     gap: 2rem;
     padding: 1.5rem;
   }
   
-  .company-info h2 {
+  .company-info1 h2 {
     font-size: 1.6rem;
   }
   
-  .company-info p {
+  .company-info1 p {
     font-size: 0.95rem;
+  }
+  .contact-content1 {
+    flex-direction: column;
+  }
+  .custom-iframe1 {
+    height: 500px;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-container {
+  .contact-container1 {
     margin: 1rem auto;
     border-radius: 12px;
   }
   
-  .contact-content {
+  .contact-content1 {
     padding: 1rem;
   }
   
-  .company-info h2 {
+  .company-info1 h2 {
     font-size: 1.4rem;
   }
 }
 
+/* Add these changes to your CSS */
+
+/* Center-align all text in company info */
+.company-info1 {
+  text-align: center !important;
+}
+
+.company-info1 h2,
+.company-info1 p,
+.company-info1 h3 {
+  text-align: center;
+}
+
+/* Adjust form iframe sizing for mobile */
+@media (max-width: 768px) {
+  .custom-iframe1 {
+    height: 600px !important; /* Increased form height */
+    margin: 0 auto; /* Center the form */
+  }
+
+  .contact-content1 {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  /* Ensure map stays centered */
+  .location-iframe1 {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .custom-iframe1 {
+    height: 650px !important; /* Even taller form */
+  }
+  
+  .company-info1 p {
+    font-size: 1rem; /* Slightly larger text */
+    margin: 1.5rem 0;
+  }
+  
+  .location-iframe1 {
+    height: 250px; /* Larger map */
+  }
+}
 /* Add this to your CSS */
 footer {
   background:
