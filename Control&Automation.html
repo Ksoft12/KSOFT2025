@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="Control&Automation.css"> <!-- Link to your CSS file -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="Control&Automation.html">Control & Automation</a></li>
+          <li><a href="DigitalPlant.html">Digital Plant</a></li>
+          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+        
+        </ul>
+      </li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+
+
+  
+   <!-- Your existing sections -->
+  <section class="background-slideshow">
+    <div class="content">
+      <h1>Control & Automation</h1>
+    </div>
+  </section>
+  
+
+
+ <!-- Automation Engineering Section -->
+  <section id="automation-engineering" class="service-section even-section">
+    <div class="service-content">
+      <div class="service-text">
+        <h2>PLC Programming and System Integration Services</h2>
+        <p>At KSOFT ENGINEERING CONSULTANCY SERVICES, we specialize in cutting-edge PLC programming and seamless system integration solutions designed to optimize your industrial processes. Our expertise ensures that your systems work together flawlessly, enhancing efficiency and reliability.</p>
+        <p>Programmable Logic Controllers (PLCs) are digital computers designed for industrial automation and control. They are crucial for managing and automating processes in various industries.</p>
+        <p>System Integration involves connecting various subsystems into a cohesive and efficient whole. It ensures that different components of your industrial operations work together smoothly.</p>
+        <p>With years of experience in PLC programming and system integration, our team at KSOFT ENGINEERING CONSULTANCY SERVICES offers unparalleled expertise. We provide customized solutions tailored to your specific needs, ensuring optimal performance and reliability.</p>
+        <h1>Our Services Include:</h1>
+        <ul>
+          <li>PLC: Siemens, Allen-Bradley (Rockwell Automation), Mitsubishi Electric, Schneider Electric do Custom programming, troubleshooting, and optimization.</li>
+          <li>System Integration: Implementation, and support for integrated systems.</li>
+          <li>Consulting and Support: Expert advice and ongoing support to keep your systems running smoothly.</li>
+        </ul>
+        <p>Ready to optimize your industrial processes? Contact us today to learn more about our PLC programming and system integration services.</p>
+      </div>
+      <div class="service-image">
+        <img src="itegration.jpg" alt="Automation Engineering Image">
+        <a href="Contact US.html" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Automotive Solutions Section -->
+  <section id="FAT" class="service-section even-section">
+    <div class="service-content">
+      <div class="service-text">
+        <h2>Factory Acceptance Testing (FAT) Support</h2>
+        <p>Factory Acceptance Testing (FAT) is conducted at the manufacturer's facility to verify that equipment or systems perform as expected before they are shipped to the customer site. FAT helps identify any issues early in the process, reducing the risk of costly modifications later on.</p>
+        <h1>GOALS OF FAT:</h1>
+        <ul>
+          <li>Verification: Ensure that the system meets all specified requirements and design criteria.</li>
+          <li>Validation: Confirm that the system operates correctly in a controlled environment.</li>
+          <li>Documentation: Provide a record of the system's performance and compliance with standards.</li>
+        </ul>
+        <h1>How to Provide FAT Support</h1>
+        <ul>
+          <li>Experienced Team: Ensure that the support team is knowledgeable about the equipment and testing procedures.</li>
+          <li>Clear Communication: Maintain clear and open communication with the customer throughout the FAT process.</li>
+          <li>Thorough Documentation: Keep detailed records of all testing procedures, results, and any issues encountered.</li>
+        </ul>
+        <p>By providing comprehensive FAT support, you ensure that the systems you deliver are reliable, fully functional, and ready for deployment, which enhances customer satisfaction and operational efficiency.</p>
+      </div>
+      <div class="service-image">
+        <img src="FAT.jpg" alt="Automotive Solutions Image">
+        <a href="Contact US.html" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Custom Engineering Services Section -->
+  <section id="SAT" class="service-section odd-section">
+    <div class="service-content">
+      <div class="service-text">
+        <h2>Site Acceptance Testing (SAT) Support and Commissioning</h2>
+        <p>Site Acceptance Testing (SAT): This is conducted at the final installation site to verify that the system performs as expected in its operational environment. It follows FAT (Factory Acceptance Testing) and ensures that all components work together correctly after installation.</p>
+        <p>Commissioning: This process involves the final setup, testing, and tuning of the system to ensure it operates according to the specifications and requirements. It includes verifying that the system is fully integrated, operational, and ready for production use.</p>
+        <p>By providing comprehensive SAT support and commissioning, you ensure that the system is fully operational, meets all requirements, and is ready for productive use, which enhances overall system performance and customer satisfaction.</p>
+      </div>
+      <div class="service-image">
+        <img src="SAT.jpg" alt="Custom Engineering Services Image">
+        <a href="Contact US.html" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenu.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if(this.getAttribute('href') !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+              window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    });
+  </script>
+
+<!-- Footer Section -->
+  <footer>
+    <div class="footer-top-border"></div>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <div class="logo-text"><img src="KSOFT_LOGO (2).png" alt="Company Logo" class="footer-logo" height="50" width="50" frameborder="0" allowfullscreen=""></div>
+        <p>Industrial Automation & Digital Transformation Experts</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin-in" style="color: #ffffff;"> </i></a>
+          <a href="#"><i class="fab fa-Youtube" style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="Control&Automation.html">Control & Automation</a></li>
+            <li><a href="DigitalPlant.html">Digital Plant</a></li>
+            <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="Control&Automation.html.#automation-engineering">PLC Programming</a></li>
+            <li><a href="Control&Automation.html.#FAT">Factory Acceptance Testing</a></li>
+            <li><a href="Control&Automation.html.#SAT">Site Acceptance Testing</a></li>
+            <li><a href="DigitalPlant.html">Ignition Scada</a></li>
+            <li><a href="DigitalPlant.html">Sepasoft MES</a></li>
+            <li><a href="VirtualPlant.html.#Process-Simulation">Process Simulation</a></li>
+            <li><a href="VirtualPlant.html.#Virtual">Virtual Commissioning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="location">
+            <h4>India</h4>
+            <p>2866, Swami Mala, Samarth Nagar,<br>Behind Chinchwade Associates, <br>Kupwad, Sangli, Maharashtra<br>India - 416436</p>
+            <p>Tel: +91 233 358 80036</p>
+            <p>Mobile USA: +1 864 283 1814</p>
+            <p onclick="window.location.href='mailto:operations@ksoftservices1.com'">operations@ksoftservices1.com</p>
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2023 KSOFT Engineering Consultancy Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
