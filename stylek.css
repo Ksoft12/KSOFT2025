@@ -1209,20 +1209,7 @@ body {
 
   /* about */
 
-  /* About Us Section with Image */
-  h1, h2 {
-    color: #333;
-  }
-  
-  p, ul {
-    color: #666;
-  }
-  
-  ul {
-    list-style: disc;
-    padding-left: 10px;
-  }
-  
+
 .about-us-section {
     display: flex;
     margin-top: -5%;
