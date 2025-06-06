@@ -243,122 +243,548 @@ body {
 
 
 
-/* About Sections */
-.about-us-section {
-  display: flex;
-  gap: 3rem;
-  padding: 4rem 5%;
-  background: white;
-  margin: 0 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+ /* FIXED STYLES FOR CONTENT SECTIONS */
+    
+    /* About Section */
+    .about-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(20, 77, 209, 0.08);
+    }
+    
+    .section-header {
+      background: linear-gradient(to right, #0cea26, #144dd1);
+      padding: 50px 40px;
+      color: white;
+      text-align: center;
+    }
+    
+    .section-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .section-header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    
+    /* Stats Container */
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      padding: 50px 30px;
+      gap: 30px;
+      background: #fff;
+      border-bottom: 1px solid #edf2f7;
+    }
+    
+    .stat-item {
+      text-align: center;
+      padding: 25px 20px;
+    }
+    
+    .stat-value {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #144dd1;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+    
+    .stat-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .stat-description {
+      font-size: 0.95rem;
+      color: #718096;
+      line-height: 1.6;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    
+    /* Content Container */
+    .content-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 0;
+      background: #fff;
+    }
+    
+    .content-block {
+      padding: 50px 40px;
+      position: relative;
+    }
+    
+    .what-we-do {
+      background: #f8fafc;
+    }
+    
+    .content-block h2 {
+      font-size: 1.8rem;
+      color: #144dd1;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .content-block h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, #0cea26, #144dd1);
+      border-radius: 2px;
+    }
+    
+    .content-block p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4a5568;
+      margin-bottom: 20px;
+      max-width: 520px;
+    }
+    
+    .highlight {
+      color: #144dd1;
+      font-weight: 600;
+      position: relative;
+    }
+    
+    .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: rgba(12, 234, 38, 0.25);
+      z-index: -1;
+    }
+    
+    .icon-container {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      opacity: 0.05;
+      font-size: 6rem;
+      color: #144dd1;
+      z-index: 0;
+    }
+    
+    /* Divider between content blocks */
+    .content-divider {
+      width: 1px;
+      background: #e2e8f0;
+      margin: 50px 0;
+    }
+    
+    /* Value Sections */
+    .value-sections {
+      padding: 4rem 5%;
+      background: #f9f9f9;
+    }
+    
+    .Vision {
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(to right, #0cea26, #144dd1);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    
+    .Vision h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    
+    .Vision p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .value-block {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      margin: 4rem 0;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    
+    .value-block.reverse {
+      flex-direction: row-reverse;
+    }
+    
+    .value-content {
+      flex: 1;
+      padding: 2rem;
+    }
+    
+    .value-content h2 {
+      font-size: 2.2rem;
+      color: #144dd1;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .value-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #50e73c;
+    }
+    
+    .value-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      max-width: 600px;
+    }
+    
+    .value-image {
+      flex: 1;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease;
+      min-height: 300px;
+      background: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .value-image:hover {
+      transform: scale(1.02);
+    }
+    
+    .value-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    
+    .placeholder-icon {
+      font-size: 4rem;
+      color: #144dd1;
+      opacity: 0.2;
+    }
+    
+    /* About Us Sections */
+    .about-us-section {
+      display: flex;
+      gap: 3rem;
+      padding: 4rem 5%;
+      background: white;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    
+    .text-section {
+      flex: 1;
+    }
+    
+    .text-section h2 {
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      position: relative;
+    }
+    
+    .text-section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #50e73c;
+    }
+    
+    .text-section p {
+      margin-bottom: 1.5rem;
+      color: #7f8c8d;
+      line-height: 1.8;
+    }
+    
+    .text-section ul {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+    
+    .text-section li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .text-section li::before {
+      content: '▹';
+      color: #50e73c;
+    }
+    
+    .image-section {
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .image-section:hover {
+      transform: translateY(-5px);
+    }
+    
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    /* CTA Button */
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #0cea26, #144dd1);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(12, 234, 38, 0.3);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .value-block {
+        gap: 2rem;
+        padding: 1.5rem;
+      }
+      
+      .value-content h2 {
+        font-size: 1.8rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .content-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .content-divider {
+        width: 90%;
+        height: 1px;
+        margin: 0 auto;
+      }
+      
+      .content-block {
+        padding: 40px 30px;
+      }
+      
+      .icon-container {
+        top: 40px;
+        right: 40px;
+        font-size: 5rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .section-header {
+        padding: 40px 30px;
+      }
+      
+      .section-header h1 {
+        font-size: 2.4rem;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 20px;
+      }
+      
+      .stat-value {
+        font-size: 2.8rem;
+      }
+      
+      .content-block h2 {
+        font-size: 1.6rem;
+      }
+      
+      .content-block p {
+        font-size: 1rem;
+      }
+      
+      .value-block {
+        flex-direction: column;
+        margin: 2rem 0;
+      }
+      
+      .value-image {
+        width: 100%;
+        min-height: 250px;
+      }
+      
+      .about-us-section {
+        flex-direction: column;
+        padding: 2rem 5%;
+      }
+      
+      .image-section {
+        min-height: 300px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section-header {
+        padding: 35px 25px;
+      }
+      
+      .section-header h1 {
+        font-size: 2rem;
+      }
+      
+      .section-header p {
+        font-size: 1rem;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+      }
+      
+      .stat-item {
+        padding: 20px 15px;
+      }
+      
+      .content-block {
+        padding: 35px 25px;
+      }
+      
+      .icon-container {
+        top: 35px;
+        right: 25px;
+        font-size: 4rem;
+      }
+      
+      .Vision h1 {
+        font-size: 2rem;
+      }
+      
+      .Vision p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Add animations for stats */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.text-section {
-  flex: 1;
+.stat-item {
+  animation: countUp 0.6s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
 }
 
-.text-section h2 {
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  position: relative;
+/* Fix value section layout */
+.value-block {
+  gap: 2rem;
 }
 
-.text-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: #50e73c;
-}
-
-.text-section p {
-  margin-bottom: 1.5rem;
-  color: #7f8c8d;
-  line-height: 1.8;
-}
-
-.text-section ul {
-  list-style: none;
-  margin: 1.5rem 0;
-}
-
-.text-section li {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #eee;
+.value-image {
+  min-height: 300px;
+  background: #f5f7fa;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.text-section li::before {
-  content: '▹';
-  color: #50e73c;
-}
-
-.image-section {
-  flex: 1;
-  border-radius: 8px;
+  justify-content: center;
+  border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+}
+
+/* Add hover effects */
+.value-image:hover {
+  transform: scale(1.03);
 }
 
 .image-section:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
-.image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+/* Fix stats badge size */
+.stat-item img {
+  max-width: 175px;
+  height: auto;
+}
+/* Add this to your CSS */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: stretch; /* Make all items same height */
 }
 
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: #e74c3c;
-  color: white !important;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-  transition: all 0.3s ease;
+.stat-item {
+  flex: 1; /* Each item takes equal space */
+  min-width: 220px; /* Minimum width before wrapping */
+  max-width: 300px; /* Maximum width for larger screens */
+  margin: 10px; /* Add some spacing */
 }
-
-.cta-button:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .about-us-section {
+  .value-block {
     flex-direction: column;
-    padding: 2rem 5%;
   }
-
-
-
-  .content h1 {
-    font-size: 2rem;
+  
+  .value-image {
+    width: 100%;
+    min-height: 250px;
   }
-
-  .text-section h2 {
-    font-size: 1.5rem;
+  
+  .stat-value {
+    font-size: 2.5rem;
   }
 }
-
-@media (max-width: 480px) {
-  .logo img {
-    height: 40px;
-  }
-
-}
-
-
 /* Add this to your CSS */
 footer {
   background:
