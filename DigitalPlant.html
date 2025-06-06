@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="DigitalPlant.css"> <!-- Link to your CSS file -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="InServices.html#automation-engineering">PLC Programming and System Integration</a></li>
+          <li><a href="InServices.html#plc-hmi-platforms">SCADA Development</a></li>
+          <li><a href="InServices.html#automotive-solutions">Factory Acceptance Testing (FAT) Support</a></li>
+          <li><a href="InServices.html#custom-engineering">Site Acceptance Testing (SAT) Support</a></li>
+          <li><a href="InServices.html#PLM">Tecnomatix Process Simulation</a></li>
+          <li><a href="InServices.html#VC">Tecnomatix Virtual Commissioning</a></li>
+        </ul>
+      </li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+
+
+  
+   <!-- Your existing sections -->
+  <section class="background-slideshow">
+    <div class="content">
+      <h1>Digital Plant</h1>
+    </div>
+  </section>
+  
+
+
+ <!-- Automation Engineering Section -->
+  <section id="SCADA" class="service-section even-section">
+    <div class="service-content">
+      <div class="service-text">
+        <h2>Ignition SCADA Development</h2>
+        <p>At KSOFT Engineering Consultancy Services, we deliver tailored Ignition SCADA solutions designed to meet the unique needs of your industrial operations. As a certified Ignition credentialed integrator, we have the expertise to develop scalable systems that offer real-time monitoring, control, and advanced analytics, all from a single, centralized platform. Whether you’re managing a small facility or a large enterprise, we ensure seamless integration with your existing infrastructure, including PLCs, robots, drives, and other industrial equipment.
+        </p>
+        <p>Our solutions empower industries such as automotive, manufacturing, and energy to enhance operational efficiency, improve decision-making, and maintain continuous control over complex processes. Our team of certified Ignition SCADA professionals is dedicated to delivering systems that not only meet your immediate needs but are also designed to scale as your business grows.
+        </p>
+        <p>Contact us today to discover how our Ignition SCADA Development services can transform your industrial automation and drive your business forward.                        </p>
+        <!--<img src="Screenshot 2024-09-06 180045.png" alt="PLC / HMI Platforms Image">-->
+        <img src="http://www.inductiveautomation.com/integrator/badge/?NTc5S1Q4UVRjRkg5Z21ZU3BlZ2d4QT09" border="0" width="175" height = "175" alt="Ignition by Inductive Automation" />
+      
+      <div class="video-container">
+        <h2>Discover the Power of Ignition: Comprehensive Demo Video</h2>
+        <p>At KSOFT ENGINEERING CONSULTANCY SERVICES, Welcome to our detailed Ignition demo project video! This presentation offers a thorough exploration of the Ignition platform, designed to showcase its capabilities and how it can significantly enhance your operational processes.</p>
+        
+        <h3>Live Demonstration: Ignition in Action</h3>
+        <p>At KSOFT ENGINEERING CONSULTANCY SERVICES, Experience Ignition live through our real-time demonstration. This segment highlights how Ignition manages data acquisition, visualization, and control. Watch as we walk you through practical scenarios and showcase the platform’s efficiency in handling complex tasks.</p>
+        
+      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7239131228149317632?compact=1" height="399" width="670" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            
+        
+    </div>
+    </div>
+</div>
+  </section>
+  
+  <section id="SCADA" class="service-section even-section">
+    <div class="service-content">
+      <div class="service-text">
+        <h2>Sepasoft MES Solutions</h2>
+        <p>At KSOFT Engineering Consultancy Services, we deliver customized Sepasoft MES solutions tailored to streamline and optimize your manufacturing operations. As a certified Sepasoft Integrator, we bring deep expertise in implementing powerful MES systems that provide seamless control over production, quality, tracking, and performance—enabling smarter, data-driven decision-making from a centralized platform.
+        </p>
+        <p>Whether you're managing a single production line or a multi-plant enterprise, our team ensures smooth integration with your existing infrastructure, including ERP systems, SCADA, PLCs, and other plant-floor devices. We specialize in modules like OEE, Track & Trace, Batch, Recipe Management, and SPC, all designed to elevate visibility, traceability, and efficiency across your operations.</p>
+        <p>Contact us today to explore how our Sepasoft MES Development services can help you transform your manufacturing operations and gain a competitive edge.</p>
+        <!--<img src="Screenshot 2024-09-06 180045.png" alt="PLC / HMI Platforms Image">-->
+        <!--
+        <img src="http://www.inductiveautomation.com/integrator/badge/?NTc5S1Q4UVRjRkg5Z21ZU3BlZ2d4QT09" border="0" width="175" height = "175" alt="Ignition by Inductive Automation" />
+      -->      
+      </div>
+      </div>
+  </section>
+  <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenu.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if(this.getAttribute('href') !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+              window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    });
+  </script>
+  <div id="footer-container"></div>
+
+  <script>
+    // Load footer content
+    fetch('Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  </body>
+  </html>
