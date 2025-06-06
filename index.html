@@ -23,13 +23,14 @@
 <div id="Navbar"></div>
 
   <script>
-    // Load footer content
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      });
-  </script>
+  // Load navbar content
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('Navbar').innerHTML = data;
+    });
+</script>
+
 
   <section class="hero-section">
   <div class="hero-content">
