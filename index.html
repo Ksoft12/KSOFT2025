@@ -22,47 +22,46 @@
 
 <div id="Navbar"></div>
 
- <script>
-  // Load navbar, then run hamburger setup script
+<script>
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('Navbar').innerHTML = data;
 
-      // Now that navbar is loaded, run hamburger logic manually here
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-      const servicesDropdown = document.querySelector('.services-dropdown');
+      // Wait for DOM to update using requestAnimationFrame
+      requestAnimationFrame(() => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const servicesDropdown = document.querySelector('.services-dropdown');
 
-      if (menuToggle && navLinks) {
-        // Toggle mobile menu
-        menuToggle.addEventListener('click', function () {
-          this.classList.toggle('active');
-          navLinks.classList.toggle('active');
-        });
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener('click', function () {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+          });
 
-        // Toggle dropdown in mobile view
-        if (servicesDropdown) {
-          servicesDropdown.addEventListener('click', function (e) {
-            if (window.innerWidth <= 992) {
-              e.preventDefault();
-              this.classList.toggle('active');
-            }
+          if (servicesDropdown) {
+            servicesDropdown.addEventListener('click', function (e) {
+              if (window.innerWidth <= 992) {
+                e.preventDefault();
+                this.classList.toggle('active');
+              }
+            });
+          }
+
+          document.querySelectorAll('.nav-links a:not(.services-dropdown > a)').forEach(link => {
+            link.addEventListener('click', function () {
+              if (window.innerWidth <= 992) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+              }
+            });
           });
         }
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a:not(.services-dropdown > a)').forEach(link => {
-          link.addEventListener('click', function () {
-            if (window.innerWidth <= 992) {
-              menuToggle.classList.remove('active');
-              navLinks.classList.remove('active');
-            }
-          });
-        });
-      }
+      });
     });
 </script>
+
 
 
 
