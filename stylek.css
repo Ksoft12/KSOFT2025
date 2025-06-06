@@ -1541,5 +1541,28 @@ body {
   }
 }
 
+/* ===== FOOTER OVERRIDES ===== */
+footer {
+  background: linear-gradient(to right, #0c2461, #144dd1) !important;
+  color: white !important;
+  position: relative !important;
+  margin-top: auto !important;
+}
 
+.footer-top-border {
+  height: 6px !important;
+  background: linear-gradient(to right, #0cea26, #0aff87) !important;
+  width: 100% !important;
+}
+
+.footer-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 60px 20px 20px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+/* Add all other footer styles from Control&Automation.css here with !important */
 
