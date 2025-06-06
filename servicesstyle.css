@@ -379,132 +379,146 @@ body {
 }
 
 /* Platforms & Clients Section */
-.simple-section {
-  padding: 4rem 2rem;
-  background: #f9f9f9;
+/* ===== PLATFORMS & CLIENTS SECTION ENHANCEMENTS ===== */
+/* ===== IMPROVED PLATFORMS & CLIENTS SECTION ===== */
+#platforms-clients {
+  background: #f8f9fa;
+  padding: 4rem 1rem;
+  text-align: center; /* Center all text in the section */
 }
 
 .section-header h2 {
   font-size: 2.5rem;
   color: #144dd1;
-  margin-bottom: 3rem;
-  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+  display: inline-block; /* Allows pseudo-element to work */
 }
 
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #0cea26, #144dd1);
+  border-radius: 2px;
+}
+
+/* Center all content in image containers */
 .image-container {
-  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 25px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 2rem;
-
+  padding: 1.5rem;
 }
 
+/* Center each logo item */
 .image-item {
   background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 1.8rem;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 160px; /* Fixed width for better control */
+  height: 140px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effects */
+.image-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #0cea26, #144dd1);
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 .image-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.image-item:hover::before {
+  transform: scaleX(1);
 }
 
 .image-item img {
   max-width: 100%;
-  max-height: 80px;
+  max-height: 70px;
   object-fit: contain;
-  filter: grayscale(0);
-  transition: filter 0.3s ease;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .image-item:hover img {
   filter: grayscale(0);
+  transform: scale(1.1);
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .overview-content {
-    grid-template-columns: 1fr;
+/* Client section specific styling */
+.client-section .image-item {
+  background: #f0f7ff;
+  border: 1px solid #e0eeff;
+}
+
+.client-section .image-item img {
+  filter: grayscale(40%);
+}
+
+.client-section .image-item:hover img {
+  filter: grayscale(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-container {
+    gap: 15px;
+    padding: 1rem;
   }
   
-  .category-container {
-    grid-template-columns: repeat(2, 1fr);
+  .image-item {
+    width: 130px;
+    height: 120px;
+    padding: 1.2rem;
   }
-}
-
-@media (max-width: 768px) {
-  .content h1 {
+  
+  .section-header h2 {
     font-size: 2rem;
   }
-  
-  .category-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .image-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    width: 90%;
-    padding: 1rem;
-  }
-  .overview-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 2rem;
-    text-align: Center;
-  }
-  .content h1 {
-    font-size: 1.5rem;
-  }
-  
-  .image-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Add these fixes */
-.services-overview, 
-.service-categories,
-.simple-section {
-  overflow-x: hidden;
-}
-
-@media (max-width: 768px) {
-  .overview-images {
-    grid-template-columns: 1fr;
-    margin: 0 10px;
-  }
-  
-  .category-container {
-    padding: 0 10px;
-  }
 }
 
 @media (max-width: 480px) {
   .image-container {
+    gap: 10px;
+  }
+  
+  .image-item {
+    width: 100px;
+    height: 100px;
     padding: 1rem;
   }
   
-  .map-container1 iframe {
-    max-width: 100%;
+  .image-item img {
+    max-height: 50px;
   }
 }
-
-
-
 
 /* Add this to your CSS */
 footer {
@@ -1141,3 +1155,134 @@ h1 {
 }
   }
  
+
+  /* ... existing CSS ... */
+
+/* ================== MOBILE RESPONSIVENESS FIXES ================== */
+
+/* Service Overview Section */
+@media (max-width: 992px) {
+  .overview-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-overview {
+    padding: 1rem;
+  }
+  
+  .overview-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .overview-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .overview-images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 10px;
+  }
+  
+  .overview-images img {
+    height: 200px;
+  }
+}
+
+/* Service Categories Section */
+@media (max-width: 992px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-categories {
+    padding: 2rem 1rem;
+  }
+  
+  .service-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .category {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .category img {
+    height: 200px;
+  }
+  
+  .category h3 {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0;
+  }
+  
+  .category p {
+    min-height: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category > div {
+    min-height: auto;
+    padding: 0.8rem;
+  }
+  
+  .category a {
+    margin: 0.5rem 1rem 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Platforms & Clients Section */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .image-container {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .image-item {
+    width: calc(50% - 15px);
+    height: 120px;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .image-item {
+    width: calc(50% - 10px);
+    height: 100px;
+    padding: 1rem;
+  }
+  
+  .image-item img {
+    max-height: 50px;
+  }
+}
+
