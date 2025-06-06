@@ -22,12 +22,15 @@
 
 <div id="Navbar"></div>
 
-  <script>
+ <script>
   // Load navbar content
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('Navbar').innerHTML = data;
+      const script = document.createElement('script');
+      script.src = 'script1.js';
+      document.body.appendChild(script); // Dynamically add JS after navbar is loaded
     });
 </script>
 
