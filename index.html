@@ -23,16 +23,47 @@
 <div id="Navbar"></div>
 
  <script>
-  // Load navbar content
+  // Load navbar, then run hamburger setup script
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('Navbar').innerHTML = data;
-      const script = document.createElement('script');
-      script.src = 'script1.js';
-      document.body.appendChild(script); // Dynamically add JS after navbar is loaded
+
+      // Now that navbar is loaded, run hamburger logic manually here
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const servicesDropdown = document.querySelector('.services-dropdown');
+
+      if (menuToggle && navLinks) {
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', function () {
+          this.classList.toggle('active');
+          navLinks.classList.toggle('active');
+        });
+
+        // Toggle dropdown in mobile view
+        if (servicesDropdown) {
+          servicesDropdown.addEventListener('click', function (e) {
+            if (window.innerWidth <= 992) {
+              e.preventDefault();
+              this.classList.toggle('active');
+            }
+          });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a:not(.services-dropdown > a)').forEach(link => {
+          link.addEventListener('click', function () {
+            if (window.innerWidth <= 992) {
+              menuToggle.classList.remove('active');
+              navLinks.classList.remove('active');
+            }
+          });
+        });
+      }
     });
 </script>
+
 
 
   <section class="hero-section">
