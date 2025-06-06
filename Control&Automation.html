@@ -14,34 +14,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
- <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
-    </div>
-  
-    <div class="menu-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      
-      <li class="services-dropdown">
-        <a href="Services.html">Services</a>
-        <ul class="dropdown-list">
-          <li><a href="Control&Automation.html">Control & Automation</a></li>
-          <li><a href="DigitalPlant.html">Digital Plant</a></li>
-          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
-        
-        </ul>
-      </li>
-      <li><a href="About.html">About Us</a></li>
-      <li><a href="Carrer.html">Career</a></li>
-      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
-    </ul>
-  </nav>
+ 
+  <div id="Navbar"></div>
+
+  <script>
+    // Load footer content
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
  
 
 
