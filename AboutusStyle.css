@@ -801,5 +801,29 @@ body {
     min-height: 250px;
   }
 }
+@media (max-width: 768px) {
+  .value-block,
+  .value-block.reverse {
+    flex-direction: column !important;
+    margin: 2rem 0;
+  }
+
+  .value-image {
+    width: 100% !important;
+    min-height: 250px !important;
+    height: auto !important;
+  }
+
+  .value-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+  }
+
+  .value-content {
+    padding: 1rem;
+  }
+}
 
 
