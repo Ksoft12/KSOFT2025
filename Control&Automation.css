@@ -554,3 +554,11 @@ body {
     max-height: 50px;
   }
 }
+
+.service-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

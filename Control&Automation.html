@@ -180,12 +180,14 @@
     }
 
     // Initialize the page with both services open
-    window.onload = function() {
-      document.getElementById('onsite-content1').classList.add('active');
-      document.getElementById('offsite-content1').classList.add('active');
-      document.getElementById('onsite-icon1').textContent = '−';
-      document.getElementById('offsite-icon1').textContent = '−';
-    };
+    // Initialize page with both services collapsed (do nothing)
+window.onload = function() {
+  document.getElementById('onsite-content1').classList.remove('active');
+  document.getElementById('offsite-content1').classList.remove('active');
+  document.getElementById('onsite-icon1').textContent = '+';
+  document.getElementById('offsite-icon1').textContent = '+';
+};
+
 
     // Mobile menu toggle
     const mobileMenu = document.getElementById('mobile-menu1');
