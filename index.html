@@ -88,26 +88,6 @@
     });
   </script>
 
-  <script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  const serviceDropdown = document.querySelector('.services-dropdown');
-
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-  });
-
-  serviceDropdown.addEventListener('click', (e) => {
-    e.stopPropagation(); // Prevent bubbling to document
-    serviceDropdown.classList.toggle('active');
-  });
-
-  // Optional: close dropdown on outside click
-  document.addEventListener('click', () => {
-    serviceDropdown.classList.remove('active');
-  });
-</script>
 
   <section class="hero-section">
   <div class="hero-content">
