@@ -787,5 +787,19 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .value-block {
+    flex-direction: column !important;
+  }
+
+  .value-block.reverse {
+    flex-direction: column !important; /* Force column layout for reverse too */
+  }
+
+  .value-image {
+    width: 100%;
+    min-height: 250px;
+  }
+}
 
 
