@@ -825,5 +825,35 @@ body {
     padding: 1rem;
   }
 }
+/* Force vertical stacking on mobile for both normal and reverse value blocks */
+@media (max-width: 768px) {
+  .value-block,
+  .value-block.reverse {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .value-image {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .value-content {
+    padding: 0 1rem;
+  }
+}
 
 
