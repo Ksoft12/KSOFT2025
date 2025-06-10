@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
-  const servicesDropdown = document.querySelector('.services-dropdown'); // <-- Add this line
-
-  if (!menuToggle || !navLinks) return;
+  const servicesDropdown = document.querySelector('.services-dropdown');
 
   // Toggle mobile menu
   menuToggle.addEventListener('click', function() {
@@ -11,23 +9,46 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.classList.toggle('active');
   });
 
-  // Toggle dropdown in mobile view
+  // Handle dropdown toggle
   if (servicesDropdown) {
-    servicesDropdown.addEventListener('click', function(e) {
+    const dropdownToggle = servicesDropdown.querySelector('a');
+    const dropdownList = servicesDropdown.querySelector('.dropdown-list');
+    
+    dropdownToggle.addEventListener('click', function(e) {
       if (window.innerWidth <= 992) {
         e.preventDefault();
-        this.classList.toggle('active');
+        servicesDropdown.classList.toggle('active');
+        dropdownList.classList.toggle('show');
       }
     });
   }
 
-  // Close mobile menu on link click (except dropdown)
-  document.querySelectorAll('.nav-links a:not(.services-dropdown > a)').forEach(link => {
+  // Close menu on all link clicks
+  document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', function() {
+      // Close mobile menu
       if (window.innerWidth <= 992) {
         menuToggle.classList.remove('active');
         navLinks.classList.remove('active');
+        servicesDropdown.classList.remove('active');
+      }
+      
+      // Close dropdowns
+      if (servicesDropdown) {
+        servicesDropdown.classList.remove('active');
+        servicesDropdown.querySelector('.dropdown-list').classList.remove('show');
       }
     });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const isClickInside = navLinks.contains(e.target) || menuToggle.contains(e.target);
+    
+    if (!isClickInside && window.innerWidth <= 992) {
+      menuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      servicesDropdown.classList.remove('active');
+    }
   });
 });
