@@ -158,7 +158,7 @@ document.getElementById('customContactForm').addEventListener('submit', async fu
     }
     
     // Send data to Google Apps Script
-    const response = await fetch('https://httpbin.org/post', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwBw3H89kYM9n7u9c50-t7Ak3sv-zMI23ONXWdmTezHBP9sNnclyybUChGtVFlUXTNsqw/exec', {
       method: 'POST',
       body: params,
       headers: {
