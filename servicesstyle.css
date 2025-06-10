@@ -177,13 +177,11 @@ body {
   .services-dropdown .dropdown-list li a {
     color: white;
   }
-  .services-dropdown:hover .dropdown-list {
-    display: none;
-  }
-  
+
   .services-dropdown.active .dropdown-list {
     display: block;
   }
+
   
   /* Animate hamburger to X when active */
   .menu-toggle.active .bar:nth-child(1) {
@@ -208,6 +206,34 @@ body {
   .navbar .logo img {
     height: 80px;
   }
+}
+
+/* Add to stylek.css */
+/* Mobile dropdown styles */
+@media (max-width: 992px) {
+  .services-dropdown .dropdown-list {
+    display: none;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  .services-dropdown.active .dropdown-list {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .services-dropdown .dropdown-list.show {
+    display: block;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 /* Enhanced Services Page Styles */
 /* ----------------------------- */
