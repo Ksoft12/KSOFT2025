@@ -24,22 +24,28 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Close menu on all link clicks
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function() {
-      // Close mobile menu
-      if (window.innerWidth <= 992) {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        servicesDropdown.classList.remove('active');
-      }
-      
-      // Close dropdowns
+ document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const isServicesParent = link === servicesDropdown.querySelector('a');
+
+    // Only prevent default if it's the Services main tab
+    if (window.innerWidth <= 992 && isServicesParent) {
+      e.preventDefault();
+      return;
+    }
+
+    // Otherwise close the mobile menu
+    if (window.innerWidth <= 992) {
+      menuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
       if (servicesDropdown) {
         servicesDropdown.classList.remove('active');
         servicesDropdown.querySelector('.dropdown-list').classList.remove('show');
       }
-    });
+    }
   });
+});
+
 
   // Close menu when clicking outside
   document.addEventListener('click', function(e) {
