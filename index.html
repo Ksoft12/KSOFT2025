@@ -48,47 +48,7 @@
   </nav>
  
 
-  <script>
-    // Fixed JavaScript for hamburger menu
-    const menuToggle = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    const serviceDropdown = document.querySelector('.services-dropdown');
-    const servicesLink = document.getElementById('services-link');
-
-    // Toggle mobile menu
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // Handle Services link click
-    servicesLink.addEventListener('click', (e) => {
-      // On mobile when menu is open, prevent navigation and toggle dropdown
-      if (window.innerWidth <= 992 && navLinks.classList.contains('active')) {
-        e.preventDefault();
-        serviceDropdown.classList.toggle('active');
-      }
-      // On desktop, navigation will happen normally
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-      // Only handle in mobile view
-      if (window.innerWidth <= 992) {
-        // Close dropdown if clicking outside
-        if (!serviceDropdown.contains(e.target)) {
-          serviceDropdown.classList.remove('active');
-        }
-        
-        // Close entire menu if clicking outside
-        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && 
-            navLinks.classList.contains('active')) {
-          menuToggle.classList.remove('active');
-          navLinks.classList.remove('active');
-        }
-      }
-    });
-  </script>
+  <script>script1.js</script>
 
 
   <section class="hero-section">
