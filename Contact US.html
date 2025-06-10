@@ -15,10 +15,10 @@
 </head>
 <body>
 
-<!-- Fixed Navbar -->
+  <!-- Fixed Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo"></a>
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
     </div>
   
     <div class="menu-toggle" id="mobile-menu">
@@ -29,8 +29,9 @@
   
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="services-dropdown">
-        <a href="Services.html" id="services-link">Services</a>
+        <a href="Services.html">Services</a>
         <ul class="dropdown-list">
           <li><a href="Control&Automation.html">Control & Automation</a></li>
           <li><a href="DigitalPlant.html">Digital Plant</a></li>
@@ -42,48 +43,9 @@
       <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
     </ul>
   </nav>
+ 
 
-  <script>
-    // Fixed JavaScript for hamburger menu
-    const menuToggle = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    const serviceDropdown = document.querySelector('.services-dropdown');
-    const servicesLink = document.getElementById('services-link');
-
-    // Toggle mobile menu
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // Handle Services link click
-    servicesLink.addEventListener('click', (e) => {
-      // On mobile when menu is open, prevent navigation and toggle dropdown
-      if (window.innerWidth <= 992 && navLinks.classList.contains('active')) {
-        e.preventDefault();
-        serviceDropdown.classList.toggle('active');
-      }
-      // On desktop, navigation will happen normally
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-      // Only handle in mobile view
-      if (window.innerWidth <= 992) {
-        // Close dropdown if clicking outside
-        if (!serviceDropdown.contains(e.target)) {
-          serviceDropdown.classList.remove('active');
-        }
-        
-        // Close entire menu if clicking outside
-        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && 
-            navLinks.classList.contains('active')) {
-          menuToggle.classList.remove('active');
-          navLinks.classList.remove('active');
-        }
-      }
-    });
-  </script>
+ <script src="script1.js"></script>
 
   <!-- Your existing sections -->
    <!-- Your existing sections -->
