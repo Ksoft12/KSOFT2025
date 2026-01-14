@@ -555,7 +555,7 @@ body {
 
 #technology-partner{
   background:#FDF8EE;
-  color: #FFFFFF;
+  color: #000000;
   padding: 3%;
 }
 
@@ -1555,6 +1555,7 @@ body {
     height: 100px;
   }
 }
+
 
 
 
