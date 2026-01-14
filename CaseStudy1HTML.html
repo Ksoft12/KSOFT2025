@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="CaseStudy1CSS.css"> <!-- Link to your CSS file -->
+
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="Control&Automation.html">Control & Automation</a></li>
+          <li><a href="DigitalPlant.html">Digital Plant</a></li>
+          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+        </ul>
+      </li>
+      <li><a href="CaseStudy1HTML.html">Case Study</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ <script src="script1.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robot-Conveyor Control and Layer-Based Dunnage Handling | KSOFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Auto Pack-In Battery Modules</h1>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>
+            KSOFT Engineering Consultancy Services partnered with Client to deliver a robust automation
+            solution for their battery pack assembly line. The goal was to streamline part handling
+            operations by integrating advanced PLC logic, HMI visualization, and robotic coordination
+            into a cohesive control system.
+        </p>
+        <p>
+            Our team developed and deployed a custom Allen-Bradley PLC program to manage critical
+            assembly workflows and conveyor movements, while a user-friendly HMI interface was
+            designed to provide operators with real-time visibility and control. We also implemented
+            precise robot-command logic and sensor feedback mechanisms to ensure synchronized
+            operations and reduce manual intervention.
+        </p>
+        <p>
+            The entire solution was successfully commissioned through remote support, enabling fast
+            deployment, efficient troubleshooting, and ongoing system optimization without on-site
+            programming requirements.
+        </p>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2>Technology Used</h2>
+        <ul>
+            <li>Studio 5000 v34.0</li>
+            <li>FactoryTalkView v120.0</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>Client</h2>
+      <p>
+        Trimasys Control Solutions Pvt. Ltd. is a leading industrial automation and digitalization
+        solutions provider focused on delivering integrated control systems for modern
+        manufacturing environments. Their expertise spans across a wide range of domains
+        including automotive, battery manufacturing, and process industries. KSOFT supported
+        Trimasys as an automation development partner to help implement this solution.
+      </p>
+      <div class="client-logo">
+      <img src="Trimsys-removebg-preview.png" alt="Trimasys Control Solutions Logo">
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-light">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>End Client</h2>
+      <p>
+        Freudenberg is a major global technology group supplying critical specialized components
+        to the battery manufacturing industry, particularly for electric vehicles (EVs). While
+        not a cell manufacturer itself, Freudenberg focuses on high-performance battery sealing
+        solutions that ensure safety, longevity, and reliability.
+      </p>
+      <div class="client-logo">
+      <img src="cliant4-removebg-preview.png" alt="Freudenberg Logo">
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2>Requirement</h2>
+        <p>
+            The system needs PLC programming to synchronize ABB robot pick/place commands with
+            infeed/main/outfeed conveyors via Ethernet/IP, using photoelectric/proximity sensor
+            interlocks for precise dunnage positioning, and implementing dynamic VFD/servo speed
+            control to eliminate robot idle time. HMI integration must provide real-time monitoring
+            of dunnage layer status (full/empty), conveyor positions, and priority-based alarms
+            (e.g., misalignment/jam diagnostics) via FactoryTalk View. Robot control logic must perform
+            sequential empty dunnage layer removal after 32 parts are unloaded (4 layers × 8 parts),
+            verified by PLC layer-counting routines.
+        </p>
+    </div>
+</section>
+
+<section class="section bg-dark">
+    <div class="container">
+        <h2>Results</h2>
+        <p>
+            The solution developed by KSOFT enabled precise and reliable control of all conveyor
+            systems through Allen-Bradley PLC programming, ensuring synchronized operation with the
+            ABB robot. The use of sensor feedback allowed the system to automatically detect dunnage
+            and part positions, resulting in smooth robot pick-and-place cycles without manual
+            intervention.
+        </p>
+        <p>
+            With optimized motor control logic, conveyor speeds were dynamically adjusted to match
+            robotic movements, enhancing process efficiency. The custom-developed HMI provided
+            operators with a user-friendly interface to monitor conveyor activity, issue manual
+            controls, and track robot commands in real-time.
+        </p>
+        <p>
+            The system’s real-time data visibility and built-in alarm handling significantly improved
+            operational transparency and reduced downtime by allowing faster troubleshooting. This
+            integrated control and visualization environment delivered a stable, responsive, and
+            maintainable automation setup tailored to the assembly line's specific needs.
+        </p>
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+  <script>
+    // Load footer content
+    fetch('Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>

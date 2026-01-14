@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="CaseStudy2CSS.css"> <!-- Link to your CSS file -->
+
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="Control&Automation.html">Control & Automation</a></li>
+          <li><a href="DigitalPlant.html">Digital Plant</a></li>
+          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+        </ul>
+      </li>
+      <li><a href="CaseStudy1HTML.html">Case Study</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+<script src="script1.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Enclosure Dunnage Handling | KSOFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Auto Pack-In Assembled Battery Power system</h1>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>
+            KSOFT Engineering Consultancy Services collaborated with the client to develop a PLC-based automation solution for the OP300 station of a battery pack assembly line. The objective was to enable seamless enclosure dunnage handling and enclosure placement operations by managing data flow between MES, robot, and conveyors—purely through PLC logic.
+        </p>
+        <p>
+            KSOFT was responsible for developing a robust Allen-Bradley PLC program that controlled conveyor movements, tracked enclosure and dunnage statuses, exchanged signals with the robot, and coordinated barcode reading and MES communication. Our scope did not include robot programming or MES development, but our PLC logic ensured tight integration and reliable data handshakes between all systems.
+        </p>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2>Technology Used</h2>
+        <ul>
+            <li>Studio 5000 v34.0</li>
+            <li>FactoryTalkView v120.0</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>Client</h2>
+      <p>
+        Trimasys Control Solutions Pvt. Ltd. is a leading industrial automation and digitalization
+        solutions provider focused on delivering integrated control systems for modern
+        manufacturing environments. Their expertise spans across a wide range of domains
+        including automotive, battery manufacturing, and process industries. KSOFT supported
+        Trimasys as an automation development partner to help implement this solution.
+      </p>
+      <div class="client-logo">
+      <img src="Trimsys-removebg-preview.png" alt="Trimasys Control Solutions Logo">
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-light">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>End Client</h2>
+      <p>
+        Freudenberg is a major global technology group supplying critical specialized components
+        to the battery manufacturing industry, particularly for electric vehicles (EVs). While
+        not a cell manufacturer itself, Freudenberg focuses on high-performance battery sealing
+        solutions that ensure safety, longevity, and reliability.
+      </p>
+      <div class="client-logo">
+      <img src="cliant4-removebg-preview.png" alt="Freudenberg Logo">
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Requirement</h2>
+        <p>
+            The OP300 station required PLC programming to automate the enclosure dunnage handling process while maintaining proper data synchronization with the MES and robot. As a pallet carrying enclosure dunnage arrived at the station, the PLC logic detected its presence and read the associated data tag to identify the required operations. The system monitored dunnage positions using sensor feedback and controlled the feed conveyor to bring it into the robot cell.
+        </p>
+        <p>
+            Communication with the robot was handled via digital signal interfacing, where the PLC issued pick/place requests and received acknowledgments (Pick Done, Place Done) in response. The vision system and barcode scanner were triggered by the PLC, and the scanned enclosure data was validated and transmitted to the MES over Ethernet/IP. Once a valid response was received, the robot was allowed to proceed with enclosure picking. The PLC ensured repeat cycles until the entire dunnage was confirmed empty, using internal counters and feedback verification.
+        </p>
+        <p> 
+            The empty dunnage was then routed back to the unload zone through the conveyor system, allowing operators to remove it via forklift. Throughout the process, the PLC updated internal data tags and provided all operational information to the HMI, enabling operators to monitor dunnage and pallet statuses, receive alarms for any mismatches or errors, and initiate manual overrides when necessary.
+        </p>
+    </div>
+</section>
+
+<section class="section bg-dark">
+    <div class="container">
+        <h2>Results</h2>
+        <p>
+            KSOFT successfully delivered a PLC solution that seamlessly integrated with both the MES and the robot system through signal-based communication. Our program handled all conveyor automation, barcode handling logic, and robot coordination without requiring manual intervention.
+        </p>
+        <p>
+            Each enclosure pick-and-place cycle was monitored using a signal exchange protocol between PLC and robot. The MES data was accurately transmitted and received, enabling barcode validation and traceability. All data tag updates were managed from the PLC end to ensure correct state tracking.
+        </p>
+        <p>
+            The HMI provided operators with real-time visibility into dunnage status, pick progress, and alarms. Operators could also intervene using manual modes if needed. This solution enabled the OP300 station to function with minimal manual dependency and ensured robust coordination between all automation layer robot, MES, and conveyor.
+        </p>
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+  <script>
+    // Load footer content
+    fetch('Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="CaseStudy3CSS.css"> <!-- Link to your CSS file -->
+
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="Control&Automation.html">Control & Automation</a></li>
+          <li><a href="DigitalPlant.html">Digital Plant</a></li>
+          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+        </ul>
+      </li>
+      <li><a href="CaseStudy1HTML.html">Case Study</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ <script src="script1.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robot-Conveyor Control and Layer-Based Dunnage Handling | KSOFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Auto Fully Assembled Battery Leak and Electrical Testing</h1>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>
+            KSOFT Engineering Consultancy Services developed a PLC-based control system for two critical stages, Station A and Station B of a battery component testing line. The goal was to automate leak and electrical tests, manage seal slide actuation, and ensure part traceability through data tag reading/writing and barcode scanning all orchestrated through robust PLC logic.
+        </p>
+        <p>
+            Our role focused on creating logic that coordinated conveyor positioning, barcode-based part validation, test sequence triggering, and integration of mechanical actuators such as vacuum/connector seal slides. No MES or robot logic was handled directly instead, the PLC acted as the central controller managing signals, test triggers, and sequence flow.
+        </p>
+       
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2>Technology Used</h2>
+        <ul>
+            <li>Studio 5000 v34.0</li>
+            <li>FactoryTalkView v120.0</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>Client</h2>
+      <p>
+        Trimasys Control Solutions Pvt. Ltd. is a leading industrial automation and digitalization
+        solutions provider focused on delivering integrated control systems for modern
+        manufacturing environments. Their expertise spans across a wide range of domains
+        including automotive, battery manufacturing, and process industries. KSOFT supported
+        Trimasys as an automation development partner to help implement this solution.
+      </p>
+      <div class="client-logo">
+      <img src="Trimsys-removebg-preview.png" alt="Trimasys Control Solutions Logo">
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-light">
+  <div class="container client-block">
+    
+    <div class="client-text">
+      <h2>End Client</h2>
+      <p>
+        Freudenberg is a major global technology group supplying critical specialized components
+        to the battery manufacturing industry, particularly for electric vehicles (EVs). While
+        not a cell manufacturer itself, Freudenberg focuses on high-performance battery sealing
+        solutions that ensure safety, longevity, and reliability.
+      </p>
+      <div class="client-logo">
+      <img src="cliant4-removebg-preview.png" alt="Freudenberg Logo">
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2>Requirement</h2>
+        <p>
+            The automation requirement for Station A and Station B involved implementing sequential control logic through PLC to perform validation and testing of components placed on pallets. As a pallet entered Station A, the system read a data tag to identify the part. The PLC then advanced the pallet to a fixed location and triggered an automatic barcode scan. Upon successful verification, vacuum seal slides were actuated to secure the component, and a leak test was initiated. Once the test was complete, the slides were retracted, and the pallet was returned to its original position. The data tag was then updated with the test result, and the pallet was released from the station.
+        </p>
+        <p>
+            At Station B, a similar sequence occurred with a focus on electrical testing. After reading the tag and scanning the barcode, the system advanced connector seal slides and triggered the electrical test automatically. Post-test, the PLC handled retraction, data tag writing, and pallet release. Throughout both stations, signal-based communication between the PLC and test equipment ensured precise coordination and reliable results.
+        </p>
+        <p>
+            Operator involvement was minimal, as the entire sequence was handled autonomously. The system was also integrated with HMI screens that provided real-time status feedback, barcode scan results, test pass/fail indication, and fault messages in case of abnormal conditions.
+        </p>
+    </div>
+</section>
+
+<section class="section bg-dark">
+    <div class="container">
+        <h2>Results</h2>
+        <p>
+            KSOFT successfully delivered a complete PLC logic solution for Station A and Station B that automated all core functions: barcode validation, seal actuation, leak and electrical testing, and traceable data tag updates. The logic handled all necessary timing, signal interlocks, and conditional checks required to ensure a safe and accurate test environment.
+        </p>
+        <p>
+            Both stations were capable of fully automatic operation with reliable performance. The system enabled efficient cycle times while minimizing manual handling and ensuring consistent traceability. Real-time HMI visualization empowered operators with immediate insight into process steps, reducing troubleshooting time and improving operational efficiency.
+        </p>
+        
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+  <script>
+    // Load footer content
+    fetch('Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>
