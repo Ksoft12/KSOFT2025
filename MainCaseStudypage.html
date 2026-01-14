@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSOFT ENGINERRING CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="MainCaseStudyPageCSS.css"> <!-- Link to your CSS file -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ 
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="KSOFT_LOGO (1).png" alt="Company Logo" /></a>
+    </div>
+  
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="services-dropdown">
+        <a href="Services.html">Services</a>
+        <ul class="dropdown-list">
+          <li><a href="Control&Automation.html">Control & Automation</a></li>
+          <li><a href="DigitalPlant.html">Digital Plant</a></li>
+          <li><a href="VirtualPlant.html">Virtual Plant</a></li>
+        </ul>
+      </li>
+      <li><a href="MainCaseStudypage.html">Case Studies</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Carrer.html">Career</a></li>
+      <li><a href="Contact US.html" class="contact-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+
+ <script src="script1.js"></script>
+
+
+
+ <!-- Your existing sections -->
+  <section class="background-slideshow">
+    <div class="content">
+      <h1>Case Studies</h1>
+    </div>
+  </section>
+
+<!-- Case Study Cards -->
+<section class="section">
+    <div class="container case-study-grid">
+
+        <!-- Card 1 -->
+        <div class="case-study-card">
+
+        <div class="case-image">
+            <img src="CaseStudy1Image.avif" alt="Auto Pack-In Battery Modules">
+        </div>
+
+        <div class="case-content">
+            <h3>Auto Pack-In Battery Modules</h3>
+            <p>
+                PLC- and HMI-based automation solution for a battery pack assembly line, delivering
+                synchronized conveyor movements, robot coordination, and real-time operational
+                visibility through robust Allen-Bradley control logic.
+            </p>
+            <a href="CaseStudy1HTML.html" class="case-btn">View Case Study</a>
+        </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="case-study-card">
+
+        <div class="case-image">
+            <img src="CaseStudy2Image.webp" alt="Auto Pack-In Battery Modules">
+        </div>
+
+        <div class="case-content">
+            <h3>Auto Pack-In Assembled Battery Power System</h3>
+            <p>
+                PLC-controlled automation solution managing enclosure handling, conveyor coordination, barcode validation, and MES–robot signal integration through robust Allen-Bradley PLC logic.
+            </p>
+            <a href="CaseStudy2HTML.html" class="case-btn">View Case Study</a>
+        </div>
+
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="case-study-card">
+
+        <div class="case-image">
+            <img src="CaseStudy3Image.webp" alt="Auto Pack-In Battery Modules">
+        </div>
+
+        <div class="case-content">
+            <h3>Auto Fully Assembled Battery Leak and Electrical testing</h3>
+            <p>
+                PLC-controlled battery component testing system integrating leak and electrical tests, conveyor positioning, seal slide actuation, and barcode-based traceability, with the PLC acting as the central sequence and test controller.
+            </p>
+            <a href="CaseStudy3HTML.html" class="case-btn">View Case Study</a>
+        </div>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+  <script>
+    // Load footer content
+    fetch('Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
